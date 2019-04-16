@@ -1,0 +1,127 @@
+
+// Deep dive - content section - Red Section (Format - Heading + side nav + text content) Accordian style
+
+// Red section card content
+.css-red-sec-card-content {
+    max-width: 1440px;
+    margin: 0px auto;
+
+    // Red section - Heading 
+    .css-red-sec-card-h2 {
+        -webkit-font-smoothing: antialiased;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 50px;
+        text-align: center;
+        opacity: 1;
+        margin-bottom: 40px;
+    }
+    // Red section - text content
+    .css-red-sec-card-text-content {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        // Side Navigation
+        .css-red-sec-card-side-nav {
+            margin-left: 80px;
+            margin-bottom: 50px;
+        }
+
+        // Text Area
+        .css-red-sec-card-text {
+            position: relative;
+            width: 100%;
+            min-width: 400px;
+            max-width: 550px;
+            flex: 1 0 0%;
+        }
+
+    }
+
+}
+
+
+// Side navigation text
+.css-red-sec-card-side-nav-h3 {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 34px;
+    opacity: 1;
+
+    // Side navigation selected link
+    .css-red-sec-card-side-nav-a-selected {
+        color: white;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .css-red-sec-card-side-nav-a-selected::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: -80px;
+        background-color: white;
+        width: 50px;
+        height: 2px;
+    }
+    
+    // side navigation unselected link
+    .css-red-sec-card-side-nav-a {
+        color: rgb(170, 173, 187);
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+// The red section - background design
+.css-red-cbg-select-all {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    overflow: hidden;
+
+    // Setting the background color
+    .css-red-cbg-bgcolor {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgb(160, 1, 30);
+
+        // Setting the design and background color for left side
+        .css-red-cbg-left-design {
+            position: absolute;
+            height: 100%;
+            z-index: 5;
+            width: 100%;
+            right: 75%;
+            transform: skewX(-25deg);
+            background: linear-gradient(rgb(135, 1, 25), rgb(160, 1, 30));
+        }
+        
+        // Setting the design and background color for right side
+        .css-red-cbg-right-design {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 60%;
+            right: 0px;
+            transform: skewX(-25deg);
+            transform-origin: 0px 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+
+
