@@ -5,7 +5,7 @@ body {
 }
 .css-sec-card {
   position: relative;
-  padding: 150px 100px;
+  padding: 8%;
   margin: 0px;
 }
 .css-sec-card-h2 {
@@ -26,6 +26,7 @@ body {
   font-weight: 300;
   line-height: 34px;
   opacity: 1;
+  text-align: justify;
 }
 .css-sec-card-h5 {
   -webkit-font-smoothing: antialiased;
@@ -57,12 +58,11 @@ header {
   right: 0px;
   display: flex;
   z-index: 6;
-  height: 50px;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  padding: 50px 50px 50px 100px;
+  padding: 4% 3% 3% 7%;
 }
 header .logo-box {
   width: 140px;
@@ -89,14 +89,14 @@ header nav a:hover {
 }
 .first-section {
   position: relative;
-  padding: 155px 100px 180px;
+  padding: 15% 14% 10% 7%;
   overflow: hidden;
 }
 .first-section .first-section-content {
   position: relative;
   width: 100%;
-  min-width: 400px;
-  max-width: 420px;
+  min-width: 40%;
+  max-width: 42%;
   flex: 1 0 0%;
 }
 @media (max-width: 900px) {
@@ -133,6 +133,7 @@ header nav a:hover {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 34px;
+  text-align: justify;
 }
 .first-section .first-section-content .how-it-works-btn {
   display: inline-block;
@@ -201,7 +202,7 @@ header nav a:hover {
   background: #ffffff;
 }
 .css-red-sec-card-content {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0px auto;
 }
 .css-red-sec-card-content .css-red-sec-card-text-content {
@@ -217,15 +218,21 @@ header nav a:hover {
   }
 }
 .css-red-sec-card-content .css-red-sec-card-text-content .css-red-sec-card-side-nav {
-  margin-left: 80px;
-  margin-bottom: 50px;
+  margin-left: 6%;
+  margin-bottom: 4%;
 }
 .css-red-sec-card-content .css-red-sec-card-text-content .css-red-sec-card-text {
   position: relative;
   width: 100%;
-  min-width: 400px;
+  min-width: 10%;
   max-width: 550px;
   flex: 1 0 0%;
+}
+@media (max-width: 600px) {
+  .css-red-sec-card-content .css-red-sec-card-text-content .css-red-sec-card-text {
+    max-width: 100%;
+    align-content: center;
+  }
 }
 .css-nav-selected {
   color: white;
@@ -283,6 +290,7 @@ header nav a:hover {
   font-weight: 300;
   line-height: 34px;
   opacity: 1;
+  text-align: justify;
 }
 .css-blue-sec-card-content {
   max-width: 1440px;
@@ -440,37 +448,46 @@ header nav a:hover {
   width: 100%;
   height: 15%;
 }
-.css-footer-content {
-  margin-bottom: 45px;
+.footer-pane .css-footer-content-area {
+  background-color: #1d2326;
+  text-align: center;
+  padding: 3% 0% 4%;
+}
+@media (max-width: 600px) {
+  .footer-pane .css-footer-content-area {
+    padding: 0% 5% 0% 13%;
+  }
+}
+.footer-pane .css-footer-content-area .css-footer-content {
+  margin-bottom: 3%;
   font-family: 'Nunito', sans-serif;
   width: 100%;
 }
-.css-footer-content a {
+@media (max-width: 600px) {
+  .footer-pane .css-footer-content-area .css-footer-content {
+    width: 100%;
+  }
+}
+.footer-pane .css-footer-content-area .css-footer-content .css-footer-social-media {
+  display: inline-block;
+}
+.footer-pane .css-footer-content-area .css-footer-content a {
   display: inline-block;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
   text-decoration: none;
 }
-.css-footer-content a:not(:last-child) {
+.footer-pane .css-footer-content-area .css-footer-content a:not(:last-child) {
   margin-right: 40px;
-}
-.css-footer-content-area {
-  background-color: #1d2326;
-  text-align: center;
-  padding: 50px 0px 60px;
-}
-.css-footer-social-media {
-  display: inline-block;
 }
 .css-footer-logo-block {
   width: 140px;
   height: 40px;
   margin: 0px 40%;
 }
-.css-footer-logo-img {
+.css-footer-logo-block .css-footer-logo-img {
   width: 140px;
   height: 40px;
-  margin-left: 40px;
   filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 .css-footer-social-media-img {
@@ -479,10 +496,6 @@ header nav a:hover {
   position: relative;
   top: 3px;
   filter: invert(100%) sepia(10%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
-footer nav {
-  position: relative;
-  display: inline-block;
 }
 @font-face {
   font-family: 'Roboto';

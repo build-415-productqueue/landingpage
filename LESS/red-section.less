@@ -3,8 +3,10 @@
 
 // Red section card content
 .css-red-sec-card-content {
-    max-width: 1440px;
+    //max-width: 1440px;
+    max-width: 100%;
     margin: 0px auto;
+  
 
     // Red section - text content
     .css-red-sec-card-text-content {
@@ -20,17 +22,22 @@
 
         // Side Navigation
         .css-red-sec-card-side-nav {
-            margin-left: 80px;
-            margin-bottom: 50px;
+            margin-left: 6%;
+            margin-bottom: 4%;
         }
 
         // Text Area
         .css-red-sec-card-text {
             position: relative;
             width: 100%;
-            min-width: 400px;
+            min-width: 10%;
             max-width: 550px;
             flex: 1 0 0%;
+
+            @media @mobile {
+                max-width:100%;
+                align-content: center;
+            }
         }
 
     }
@@ -108,6 +115,7 @@
     font-weight: 300;
     line-height: 34px;
     opacity: 1;
+    text-align: justify;
     
   }
 
