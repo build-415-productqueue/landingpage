@@ -4,6 +4,7 @@
     max-width: 1440px;
     margin: 0px auto;
 
+
     .css-blue-sec-card-pos {
         position: relative;
         width: 100%;
@@ -11,10 +12,16 @@
         max-width: 600px;
         flex: 1 0 0%;
 
+        @media @tablet {
+        max-width: 900px;
+        justify-content: center;
+        }
+
         .css-blue-sec-card-text-content {
             display: flex;
             -webkit-box-pack: justify;
             justify-content: space-between;
+            //justify-content: center;
             -webkit-box-align: start;
             align-items: flex-start;
 
@@ -84,6 +91,10 @@
         background-repeat: no-repeat;
         background-position: -150px center;
         background-image: url("../assets/lambdaLabsBest.jpg");
+
+        @media @tablet{
+            display:none;
+        }
     }
 }
 

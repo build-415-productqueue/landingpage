@@ -62,25 +62,25 @@ header {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  padding: 50px 100px;
+  padding: 50px 50px 50px 100px;
 }
-.logo-box {
+header .logo-box {
   width: 140px;
   height: 40px;
 }
-nav {
-  position: absolute;
-  right: 200px;
+header nav {
+  position: relative;
+  right: 0px;
   display: inline-block;
 }
-a {
+header nav a {
   background-color: transparent;
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Nunito', sans-serif;
   padding-right: 40px;
 }
-a:hover {
+header nav a:hover {
   background-color: transparent;
   text-decoration: underline;
   color: darkgray;
@@ -92,17 +92,22 @@ a:hover {
   padding: 155px 100px 180px;
   overflow: hidden;
 }
-.first-section-content {
+.first-section .first-section-content {
   position: relative;
   width: 100%;
   min-width: 400px;
   max-width: 420px;
   flex: 1 0 0%;
 }
-.first-section-heading {
+@media (max-width: 900px) {
+  .first-section .first-section-content {
+    max-width: 800px;
+  }
+}
+.first-section .first-section-content .first-section-heading {
   display: inline;
 }
-.first-section-main-heading {
+.first-section .first-section-content .first-section-heading .first-section-main-heading {
   -webkit-font-smoothing: antialiased;
   color: #181f22;
   font-family: 'Roboto', sans-serif;
@@ -112,7 +117,7 @@ a:hover {
   white-space: nowrap;
   margin: 0px;
 }
-.first-section-sub-heading {
+.first-section .first-section-content .first-section-heading .first-section-sub-heading {
   -webkit-font-smoothing: antialiased;
   color: #181f22;
   font-family: 'Roboto', sans-serif;
@@ -121,7 +126,7 @@ a:hover {
   line-height: 20px;
   white-space: nowrap;
 }
-.first-section-content-details {
+.first-section .first-section-content .first-section-content-details {
   -webkit-font-smoothing: antialiased;
   color: #5e616d;
   font-family: 'Nunito', sans-serif;
@@ -129,7 +134,7 @@ a:hover {
   font-weight: 300;
   line-height: 34px;
 }
-.how-it-works-btn {
+.first-section .first-section-content .how-it-works-btn {
   display: inline-block;
   background-color: #a0011e;
   color: #ffffff;
@@ -156,7 +161,7 @@ a:hover {
   z-index: -1;
   overflow: hidden;
 }
-.css-top-sec-bckgrnd-img {
+.css-top-section-select .css-top-sec-bckgrnd-img {
   z-index: -1;
   height: 100%;
   width: 890px;
@@ -168,7 +173,12 @@ a:hover {
   opacity: 1;
   background-repeat: no-repeat;
 }
-.css-top-sec-slice-img-top {
+@media (max-width: 900px) {
+  .css-top-section-select .css-top-sec-bckgrnd-img {
+    display: none;
+  }
+}
+.css-top-section-select .css-top-sec-bckgrnd-img .css-top-sec-slice-img-top {
   top: 0px;
   left: 0px;
   position: absolute;
@@ -179,7 +189,7 @@ a:hover {
   transform: skewX(-25deg);
   background: #ffffff;
 }
-.css-top-sec-slice-img-btm {
+.css-top-section-select .css-top-sec-bckgrnd-img .css-top-sec-slice-img-btm {
   bottom: 0px;
   right: 0px;
   position: absolute;
@@ -200,6 +210,11 @@ a:hover {
   -webkit-box-pack: justify;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .css-red-sec-card-content .css-red-sec-card-text-content {
+    justify-content: center;
+  }
 }
 .css-red-sec-card-content .css-red-sec-card-text-content .css-red-sec-card-side-nav {
   margin-left: 80px;
@@ -280,6 +295,12 @@ a:hover {
   max-width: 600px;
   flex: 1 0 0%;
 }
+@media (max-width: 900px) {
+  .css-blue-sec-card-content .css-blue-sec-card-pos {
+    max-width: 900px;
+    justify-content: center;
+  }
+}
 .css-blue-sec-card-content .css-blue-sec-card-pos .css-blue-sec-card-text-content {
   display: flex;
   -webkit-box-pack: justify;
@@ -344,6 +365,11 @@ a:hover {
   background-repeat: no-repeat;
   background-position: -150px center;
   background-image: url("../assets/lambdaLabsBest.jpg");
+}
+@media (max-width: 900px) {
+  .css-blue-cbg-img-content .css-blue-cbg-img {
+    display: none;
+  }
 }
 .css-black-sec-card-content {
   position: relative;
@@ -414,27 +440,36 @@ a:hover {
   width: 100%;
   height: 15%;
 }
-.footer-pane .css-footer-content-area {
+.css-footer-content {
+  margin-bottom: 45px;
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+}
+.css-footer-content a {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.css-footer-content a:not(:last-child) {
+  margin-right: 40px;
+}
+.css-footer-content-area {
   background-color: #1d2326;
   text-align: center;
   padding: 50px 0px 60px;
 }
-.footer-pane .css-footer-content-area .css-footer-content {
-  margin-bottom: 45px;
-  font-family: 'Nunito', sans-serif;
-}
-.footer-pane .css-footer-content-area .css-footer-content .css-footer-social-media {
+.css-footer-social-media {
   display: inline-block;
 }
 .css-footer-logo-block {
   width: 140px;
   height: 40px;
-  margin: 40px 40%;
+  margin: 0px 40%;
 }
-.css-footer-logo-block .css-footer-logo-img {
+.css-footer-logo-img {
   width: 140px;
   height: 40px;
-  margin-top: 40px;
   margin-left: 40px;
   filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
@@ -446,8 +481,7 @@ a:hover {
   filter: invert(100%) sepia(10%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 footer nav {
-  position: absolute;
-  right: 160px;
+  position: relative;
   display: inline-block;
 }
 @font-face {
