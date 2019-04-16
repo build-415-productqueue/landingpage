@@ -34,13 +34,13 @@
 }
 
     // Side navigation selected link
-    .css-red-sec-card-side-nav-a-selected {
+    .css-nav-selected {
         color: white;
         position: relative;
         cursor: pointer;
     }
 
-    .css-red-sec-card-side-nav-a-selected::before {
+    .css-nav-selected::before {
         content: "";
         position: absolute;
         top: 15px;
@@ -48,6 +48,7 @@
         background-color: white;
         width: 50px;
         height: 2px;
+        color: white;
     }
     
     // side navigation unselected link
@@ -89,5 +90,21 @@
             overflow: hidden;
         }
     }
+
+// For accordian
+.css-sec-card-h3-acc-nodisplay {
+    display:none;
+  }
+
+.css-sec-card-h3-acc {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 34px;
+    opacity: 1;
+    
+  }
 
 

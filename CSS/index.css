@@ -212,12 +212,12 @@ a:hover {
   max-width: 550px;
   flex: 1 0 0%;
 }
-.css-red-sec-card-side-nav-a-selected {
+.css-nav-selected {
   color: white;
   position: relative;
   cursor: pointer;
 }
-.css-red-sec-card-side-nav-a-selected::before {
+.css-nav-selected::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -225,6 +225,7 @@ a:hover {
   background-color: white;
   width: 50px;
   height: 2px;
+  color: white;
 }
 .css-red-sec-card-side-nav-a {
   color: #aaadbb;
@@ -255,6 +256,18 @@ a:hover {
   transform: skewX(-25deg);
   transform-origin: 0px 100%;
   overflow: hidden;
+}
+.css-sec-card-h3-acc-nodisplay {
+  display: none;
+}
+.css-sec-card-h3-acc {
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 34px;
+  opacity: 1;
 }
 .css-blue-sec-card-content {
   max-width: 1440px;
