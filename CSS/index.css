@@ -397,40 +397,40 @@ a:hover {
   transform: skewX(-25deg);
   background: linear-gradient(#22292c, #272e31);
 }
-.css-1rz7enw {
+.footer-pane {
+  width: 100%;
+  height: 15%;
+}
+.footer-pane .css-footer-content-area {
   background-color: #1d2326;
   text-align: center;
   padding: 50px 0px 60px;
 }
-.css-5801x4 {
+.footer-pane .css-footer-content-area .css-footer-content {
   margin-bottom: 45px;
   font-family: 'Nunito', sans-serif;
 }
-.css-w0yocm {
+.footer-pane .css-footer-content-area .css-footer-content .css-footer-social-media {
   display: inline-block;
 }
-.css-w48r46 {
+.css-footer-logo-block {
   width: 140px;
   height: 40px;
   margin: 40px 40%;
 }
-.css-13ymtpq {
+.css-footer-logo-block .css-footer-logo-img {
   width: 140px;
   height: 40px;
   margin-top: 40px;
   margin-left: 40px;
   filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
-.css-5gvpa4 {
+.css-footer-social-media-img {
   width: 19px;
   height: 19px;
   position: relative;
   top: 3px;
   filter: invert(100%) sepia(10%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
-.footer-pane {
-  width: 100%;
-  height: 15%;
 }
 footer nav {
   position: absolute;
