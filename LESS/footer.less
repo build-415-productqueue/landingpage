@@ -3,50 +3,58 @@
     width: 100%;
     height: 15%;
 
+    .css-footer-content-area {
+        background-color: rgb(29, 35, 38);
+        text-align: center;
+        padding: 3% 0% 4%;
 
+        @media @mobile {
+            padding: 0% 5% 0% 13%;
+        }
+
+        .css-footer-content {
+            margin-bottom: 3%;
+            font-family: 'Nunito', sans-serif;
+            width: 100%;
+
+            @media @mobile{
+                width: 100%;
+            }
+
+            .css-footer-social-media{
+                display: inline-block;
+            }
+
+            a {
+                display: inline-block;
+                font-family: 'Nunito', sans-serif;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            
+            a:not(:last-child) {
+                margin-right: 40px;
+
+            }
+        }
+    }
 
 }
-.css-footer-content {
-    margin-bottom: 45px;
-    font-family: 'Nunito', sans-serif;
-    width: 100%;
-}
 
-.css-footer-content a {
-    display: inline-block;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.css-footer-content a:not(:last-child) {
-    margin-right: 40px;
-}
-.css-footer-content-area {
-    background-color: rgb(29, 35, 38);
-    text-align: center;
-    padding: 50px 0px 60px;
-
-
-}
-.css-footer-social-media{
-    display: inline-block;
-}
 // Footer lambda logo
 .css-footer-logo-block {
     width: 140px;
     height: 40px;
     margin: 0px 40%;
 
+    .css-footer-logo-img {
+        width: 140px;
+        height: 40px;
+        filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    }
 
 }
-.css-footer-logo-img {
-    width: 140px;
-    height: 40px;
-    //margin-top: 40px;
-    margin-left: 40px;
-    filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
+
 // Footer social media images
 .css-footer-social-media-img {
     width: 19px;
@@ -57,11 +65,4 @@
 
 }
 
-
-// Footer navigation
-footer nav {
-    position: relative;
-    //right: 160px;
-    display: inline-block;
-}
 
