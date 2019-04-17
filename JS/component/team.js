@@ -1,4 +1,6 @@
-console.log(`In team.js`)
+/*
+ * teamMembers is an array of containing the details of team members as team member objects.
+ */
 
 let teamMembers = [
   {
@@ -64,8 +66,18 @@ let teamMembers = [
   }
 ]
 
+// Looping through the teamMembers array and invoking the "buildTeamMembers()" which created the
+// HTML DOM fragment for each team member
 teamMembers.forEach(teamMember => buildTeamMembers(teamMember))
 
+/*
+ * buildTeamMembers() function builds the HTML for each team member in the teamMembers array.
+ * It takes in the information of a teamMember and creates the necessary tags and populates the data
+ * accordingly.
+ *
+ * @teamMember - One item from the array list teamMembers. Contains information about the team members
+ *
+ */
 function buildTeamMembers(teamMember) {
   let parentElement = document.querySelector('.css-sec-card')
   let siblingElement = document.querySelector('.css-cbg-select-all')
@@ -74,15 +86,13 @@ function buildTeamMembers(teamMember) {
   let divContentImgArea = createDivTag('css-gray-content-img-area')
   let divContentImg = createDivTag('css-gray-content-img')
   let bckimg = 'background-image: url(' + teamMember.image + ')'
-  console.log(teamMember.image)
-  //divContentImg.style = "background-image: url('" + teamMember.image + "')"
   divContentImg.setAttribute('style', bckimg)
-  //divContentImg.style.background = 'url(./assets/G3_ProfilePic.jpeg)'
   let nameDisplay = createH4Tag('css-sec-card-h4', teamMember.name)
   let titleDisplay = createPTag('css-sec-card-p-black', teamMember.role)
   let socialLinks = buildSocialLinks(teamMember)
   let divTextArea = createDivTag('css-gray-text-area')
   let textContent = createPTag('css-sec-card-text-p', teamMember.description)
+
   divContentImgArea.appendChild(divContentImg)
   divContentArea.appendChild(divContentImgArea)
   divContentArea.appendChild(nameDisplay)
@@ -91,22 +101,37 @@ function buildTeamMembers(teamMember) {
   divTextArea.appendChild(textContent)
   teamMemberSection.appendChild(divContentArea)
   teamMemberSection.appendChild(divTextArea)
-  console.log(teamMemberSection)
   parentElement.insertBefore(teamMemberSection, siblingElement)
 }
 
+/*
+ * This function creates the 'section' tag
+ *
+ * @param - className - Name of the CSS class for section.
+ */
 function createSectionTag(className) {
   let section = document.createElement('section')
   section.className = className
   return section
 }
 
+/*
+ * This function creates the 'div' tag
+ *
+ * @param - className - Name of the CSS class for div.
+ */
 function createDivTag(className) {
   let divTag = document.createElement('div')
   divTag.className = className
   return divTag
 }
 
+/*
+ * This function creates the 'h4' tag
+ *
+ * @param - className - Name of the CSS class for h4.
+ * @param - name - Takes in a string - name of the team member
+ */
 function createH4Tag(className, name) {
   let h4Tag = document.createElement('h4')
   h4Tag.className = className
@@ -114,6 +139,12 @@ function createH4Tag(className, name) {
   return h4Tag
 }
 
+/*
+ * This function creates the 'p' tag
+ *
+ * @param - className - Name of the CSS class for p.
+ * @param - description - Takes in a string
+ */
 function createPTag(className, description) {
   let pTag = document.createElement('p')
   pTag.className = className
@@ -121,17 +152,31 @@ function createPTag(className, description) {
   return pTag
 }
 
+/*
+ * This function creates the 'ul' tag
+ *
+ * @param - className - Name of the CSS class for ul.
+ */
 function createUnorderedListTag(className) {
   let ulTag = document.createElement('ul')
   ulTag.className = className
   return ulTag
 }
 
+/*
+ * This function creates the 'li' tag
+ */
 function createListTag() {
   let listTag = document.createElement('li')
   return listTag
 }
 
+/*
+ * This function creates the 'a' tag
+ *
+ * @param - className - Name of the CSS class for a.
+ * @param - reference - Where the link has to point to
+ */
 function createATag(className, reference) {
   let aTag = document.createElement('a')
   aTag.className = className
@@ -141,6 +186,12 @@ function createATag(className, reference) {
   return aTag
 }
 
+/*
+ * This function creates the 'image' tag
+ *
+ * @param - className - Name of the CSS class for image.
+ * @param - imageSource - The source of the image
+ */
 function createImageTag(className, imageSource) {
   let imgTag = document.createElement('img')
   imgTag.className = className
@@ -148,6 +199,12 @@ function createImageTag(className, imageSource) {
   return imgTag
 }
 
+/*
+ * This function builds the social links
+ *
+ * @param - teamMember - Takes the teamMember object and extracts the socialMedia
+ * links array to form the links.
+ */
 function buildSocialLinks(teamMember) {
   let ulTag = createUnorderedListTag('css-gray-content-ul')
   let imgSrc = [
@@ -156,16 +213,17 @@ function buildSocialLinks(teamMember) {
     './assets/lambdaTwitter.svg'
   ]
   for (let i = 0; i < teamMember.socialMediaLinks.length; i++) {
-    let liTag = createListTag()
-    let aTag = createATag(
-      'css-social-media-link',
-      teamMember.socialMediaLinks[i]
-    )
-    let imgTag = createImageTag('css-social-media-img', imgSrc[i])
-    aTag.appendChild(imgTag)
-    liTag.appendChild(aTag)
-    ulTag.appendChild(liTag)
+    if (teamMember.socialMediaLinks[i] != '') {
+      let liTag = createListTag()
+      let aTag = createATag(
+        'css-social-media-link',
+        teamMember.socialMediaLinks[i]
+      )
+      let imgTag = createImageTag('css-social-media-img', imgSrc[i])
+      aTag.appendChild(imgTag)
+      liTag.appendChild(aTag)
+      ulTag.appendChild(liTag)
+    }
   }
-  console.log(ulTag)
   return ulTag
 }
