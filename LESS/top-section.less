@@ -82,47 +82,63 @@
     z-index: -1;
     overflow: hidden;
 
-    .css-top-sec-bckgrnd-img{
-        z-index: -1;
-        height: 100%;
-        width: 890px;
-        position: absolute;
-        right: 0px;
-        content: " ";
-        background-image: url("../assets/lambdaProdQImg.jpg");
-        background-size: cover;
-        opacity: 1;
-        background-repeat: no-repeat;
 
-        @media @tablet{
-            display:none;
-        }
+}
 
-        .css-top-sec-slice-img-top {
-            top: 0px;
-            left: 0px;
-            position: absolute;
-            height: 100%;
-            z-index: 5;
-            right: 540px;
-            transform-origin: 0px 0px;
-            transform: skewX(-25deg);
-            background: rgb(255, 255, 255);
-        }
-        
-        .css-top-sec-slice-img-btm {
-            bottom: 0px;
-            right: 0px;
-            position: absolute;
-            height: 100%;
-            z-index: 5;
-            width: 250px;
-            transform-origin: 100% 100%;
-            transform: skewX(-25deg);
-            background: rgb(255, 255, 255);
-        }
+.css-top-sec-slice-img-top {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    z-index: 5;
+    right: 540px;
+    transform-origin: 0px 0px;
+    transform: skewX(-25deg);
+    background: rgb(255, 255, 255);
+}
+
+.css-top-sec-slice-img-btm {
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+    z-index: 5;
+    width: 250px;
+    transform-origin: 100% 100%;
+    transform: skewX(-25deg);
+    background: rgb(255, 255, 255);
+}
+
+.css-top-sec-bckgrnd-img {
+    z-index: -1;
+    height: 100%;
+    width: 890px;
+    position: absolute;
+    right: 0px;
+    content: " ";
+    background-image: url("../assets/lambdaProdQImg.jpg");
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+
+    @media @tablet{
+        display:none;
     }
 }
 
+.css-abt-sec-bckgrnd-img {
+    z-index: -1;
+    height: 100%;
+    width: 890px;
+    position: absolute;
+    right: 0px;
+    content: " ";
+    background-image: url("../assets/shakeHand.jpg");
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
 
-
+    @media @tablet{
+        display:none;
+    }
+}
