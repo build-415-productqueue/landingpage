@@ -28,6 +28,14 @@ body {
   opacity: 1;
   text-align: justify;
 }
+.css-sec-card-h4 {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200px;
+  text-align: center;
+  margin: 0px;
+}
 .css-sec-card-h5 {
   -webkit-font-smoothing: antialiased;
   font-family: europa, sans-serif;
@@ -50,6 +58,22 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Nunito', sans-serif;
   color: #aaadbb;
+}
+.css-sec-card-p-black {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  text-align: center;
+}
+.css-sec-card-h2-black {
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 50px;
+  text-align: center;
+  opacity: 1;
 }
 header {
   position: absolute;
@@ -461,6 +485,114 @@ header nav a:hover {
   transform-origin: 100% 100%;
   transform: skewX(-25deg);
   background: linear-gradient(#22292c, #272e31);
+}
+.css-gray-cbg-bgcolor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fafbfd;
+}
+.css-gray-cbg-bgcolor .css-gray-cbg-left-design {
+  position: absolute;
+  height: 100%;
+  z-index: 5;
+  width: 100%;
+  right: 1031px;
+  transform: skewX(-25deg);
+  background: linear-gradient(#fafbfd, #f6f8f8);
+}
+.css-gray-cbg-bgcolor .css-gray-cbg-right-design {
+  position: absolute;
+  height: 100%;
+  z-index: 4;
+  width: 100%;
+  right: 424px;
+  transform: skewX(-25deg);
+  background: linear-gradient(#f6f8f8, #fafbfd);
+}
+.css-gray-sec-cards {
+  position: relative;
+  width: 100%;
+  min-width: 400px;
+  text-align: center;
+  flex: 1 0 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.css-sec-card-h3 {
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 34px;
+  opacity: 1;
+  text-align: center;
+}
+.css-gray-content-area {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  text-align: left;
+  border-radius: 3px;
+  background: lightgray;
+  padding: 60px 30px 0px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fcfcfd;
+  border-image: initial;
+  margin: 68px 7px 0px;
+}
+.css-gray-content-area .css-gray-content-img-area {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  left: 0px;
+}
+.css-gray-content-area .css-gray-content-img-area .css-gray-content-img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f3f5f8;
+  border-image: initial;
+  background-position: center top;
+  margin: 0px auto;
+  background-image: url("https://dl.airtable.com/YWBhPy1RS8OeaiSPxGpo_elyalamillo.jpg");
+}
+.css-gray-content-ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+.css-social-media-img {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 3px;
+  filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+.css-social-media-link {
+  padding-right: 30px;
+}
+.css-gray-text-area {
+  width: 65%;
+}
+.css-sec-card-text-p {
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: 300;
+  opacity: 1;
 }
 .footer-pane {
   width: 100%;
