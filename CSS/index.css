@@ -191,7 +191,29 @@ header nav a:hover {
   z-index: -1;
   overflow: hidden;
 }
-.css-top-section-select .css-top-sec-bckgrnd-img {
+.css-top-sec-slice-img-top {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  z-index: 5;
+  right: 540px;
+  transform-origin: 0px 0px;
+  transform: skewX(-25deg);
+  background: #ffffff;
+}
+.css-top-sec-slice-img-btm {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  height: 100%;
+  z-index: 5;
+  width: 250px;
+  transform-origin: 100% 100%;
+  transform: skewX(-25deg);
+  background: #ffffff;
+}
+.css-top-sec-bckgrnd-img {
   z-index: -1;
   height: 100%;
   width: 890px;
@@ -204,31 +226,26 @@ header nav a:hover {
   background-repeat: no-repeat;
 }
 @media (max-width: 900px) {
-  .css-top-section-select .css-top-sec-bckgrnd-img {
+  .css-top-sec-bckgrnd-img {
     display: none;
   }
 }
-.css-top-section-select .css-top-sec-bckgrnd-img .css-top-sec-slice-img-top {
-  top: 0px;
-  left: 0px;
-  position: absolute;
+.css-abt-sec-bckgrnd-img {
+  z-index: -1;
   height: 100%;
-  z-index: 5;
-  right: 540px;
-  transform-origin: 0px 0px;
-  transform: skewX(-25deg);
-  background: #ffffff;
-}
-.css-top-section-select .css-top-sec-bckgrnd-img .css-top-sec-slice-img-btm {
-  bottom: 0px;
+  width: 890px;
+  position: absolute;
   right: 0px;
-  position: absolute;
-  height: 100%;
-  z-index: 5;
-  width: 250px;
-  transform-origin: 100% 100%;
-  transform: skewX(-25deg);
-  background: #ffffff;
+  content: " ";
+  background-image: url("../assets/shakeHand.jpg");
+  background-size: cover;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .css-abt-sec-bckgrnd-img {
+    display: none;
+  }
 }
 .css-red-sec-card-content {
   max-width: 100%;
