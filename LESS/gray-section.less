@@ -38,6 +38,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
+    
 
     @media @tablet {
         flex-direction: column;
@@ -45,7 +46,7 @@
 }
 
   // Side heading - h3
-  .css-sec-card-h3 {
+  .css-gray-sec-card-h3 {
     -webkit-font-smoothing: antialiased;
     color: black;
     font-family: 'Nunito', sans-serif;
@@ -54,6 +55,7 @@
     line-height: 34px;
     opacity: 1;
     text-align: center;
+    
   }
 
 .css-gray-content-area {
@@ -70,12 +72,14 @@
     border-color: rgb(252, 252, 253);
     border-image: initial;
     margin: 68px 7px 0px;
+    
 
     .css-gray-content-img-area {
         position: absolute;
         top: -50px;
         width: 100%;
         left: 0px;
+        
 
         .css-gray-content-img {
             width: 100px;
@@ -88,14 +92,12 @@
             border-image: initial;
             background-position: center top;
             margin: 0px auto;
-            //background-image: url("https://dl.airtable.com/YWBhPy1RS8OeaiSPxGpo_elyalamillo.jpg");
+           
         }
     }
 }
 
 .css-gray-content-ul {
-    text-align: center;
-    //margin: 13px 0px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -110,10 +112,14 @@
     top: 3px;
     filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 
+    &:hover{
+        filter: sepia(100%) saturate(3000%) invert(100%);
+    }
 }
 
 .css-social-media-link {
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .css-gray-text-area {
@@ -130,3 +136,4 @@
     font-weight: 300;
     opacity: 1;
 }
+
