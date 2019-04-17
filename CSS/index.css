@@ -87,6 +87,11 @@ header nav a:hover {
   font-family: 'Nunito', sans-serif;
   padding-right: 40px;
 }
+@media (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
 .first-section {
   position: relative;
   padding: 15% 14% 10% 7%;
@@ -292,6 +297,19 @@ header nav a:hover {
   opacity: 1;
   text-align: justify;
 }
+.css-red-sec-card-a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: underline;
+}
 .css-blue-sec-card-content {
   max-width: 1440px;
   margin: 0px auto;
@@ -483,7 +501,12 @@ header nav a:hover {
 .css-footer-logo-block {
   width: 140px;
   height: 40px;
-  margin: 0px 40%;
+  margin: 0px 45%;
+}
+@media (max-width: 600px) {
+  .css-footer-logo-block {
+    margin: 0% 30%;
+  }
 }
 .css-footer-logo-block .css-footer-logo-img {
   width: 140px;
