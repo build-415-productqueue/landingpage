@@ -520,6 +520,11 @@ header nav a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .css-gray-sec-cards {
+    flex-direction: column;
+  }
+}
 .css-sec-card-h3 {
   -webkit-font-smoothing: antialiased;
   color: black;
@@ -562,7 +567,6 @@ header nav a:hover {
   border-image: initial;
   background-position: center top;
   margin: 0px auto;
-  background-image: url("https://dl.airtable.com/YWBhPy1RS8OeaiSPxGpo_elyalamillo.jpg");
 }
 .css-gray-content-ul {
   text-align: center;

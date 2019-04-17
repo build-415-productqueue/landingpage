@@ -62,7 +62,7 @@ let teamMembers = [
       'mailto:gayathri.t.ramakrishnan@gmail.com'
     ],
     description:
-      'Gayathri is a student at Lambda pursuing Full-stack development. She has a strong background in web applications realting to manufacturing and logistics. She recently moved from being a project manager of cyber security implementations to a full-time student at Lambda. She enjoys coding and is looking for a strong coding experience in her future roles.'
+      'Gayathri is currently a student at Lambda pursuing Full-stack development. She has a strong background in web applications realting to manufacturing and logistics. She recently moved from being a project manager of cyber security implementations to a full-time student at Lambda. She enjoys coding and is looking for a strong coding experience in her future roles.'
   }
 ]
 
