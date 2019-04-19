@@ -86,7 +86,7 @@ header {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  padding: 3.3% 3% 3% 7.2%;
+  padding: 3.4% 3% 3% 7.45%;
 }
 header .logo-box {
   width: 140px;
@@ -667,7 +667,7 @@ header nav a:hover {
 .css-footer-logo-block .css-footer-logo-img {
   width: 140px;
   height: 40px;
-  filter: invert(30%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  filter: invert(50%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(65%) contrast(119%);
 }
 .css-footer-social-media-img {
   width: 19px;
